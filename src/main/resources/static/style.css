@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #BDB395;
+    --secondary-color: #D5C7A3;
+    --background-color: #F6F0F0;
+    --hover-color:#6b6754;
+    --hover-scale: 1.05;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    text-align: center;
+    font-family: var(--font-family); 
+    color: var(--hover-color);
+}
+
+body {
+    display: flexbox;
+    gap: 1rem;
+    justify-content: center; 
+    background-color: var(--background-color); 
+}
+
+.moves {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0 10rem;
+}
+
+.game-move {
+    margin: 2rem;
+    display: flexbox;
+    align-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    min-width: 15rem;
+    min-height: 15rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.game-move:hover {
+    box-shadow: 0 0.25rem 1rem rgba(51, 51, 51, 0.5);
+    scale: scale(var(--hover-scale));
+    background-color: var(--hover-color);
+}
+
+.game-move:hover h3 {
+    color: var(--background-color);
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0 10rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 2rem;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: var(--hover-color); /* A slightly darker shade of the primary color */
+    transform: scale(var(--hover-scale)); /* Slight zoom effect on hover */
+}

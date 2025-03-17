@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rock, Paper, Scissors Game</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="choose-move">
+            <h2 id="choose-move">Choose Your Move</h2>
+            <div class="moves">
+                <div class="game-move">
+                    <img src="./image-resources/rock.png" alt="Rock icon">
+                    <h3>Rock</h3>
+                </div>
+    
+                <div class="game-move">
+                    <img src="./image-resources/paper.png" alt="Paper icon">
+                    <h3>Paper</h3>
+                </div>
+    
+                <div class="game-move">
+                    <img src="./image-resources/scissors.png" alt="Scissors icon">
+                    <h3>Scissors</h3>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="computer-choice">
+            <h2 id="computer-choice">The Computer's Choice</h2>
+            <div class="computer-info">
+                <p><strong>The computer chose:</strong> <span id="computer-move">ROCK</span></p>
+                <p><strong>Therefore, you:</strong> <span id="outcome">LOST</span></p>
+                <h2>Scores</h2>
+                <div class="scores">
+                    <article>
+                        <h3>Wins:</h3>
+                        <p id="wins">0</p>
+                    </article>
+                    <article>
+                        <h3>Losses:</h3>
+                        <p id="losses">0</p>
+                    </article>
+                    <article>
+                        <h3>Ties:</h3>
+                        <p id="ties">0</p>
+                    </article>
+                </div>
+            </div>
+
+             
+            <button id="reset-button">Reset Game</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rock, Paper, Scissors Game</p>
+    </footer>
+</body>
+</html>
